@@ -48,7 +48,6 @@ namespace ArraysBedingungen
             #endregion
 
 
-
             #region Bedingungen (If/Else)
 
             //Deklaration und Initialisierung von Beispiel-Variablen
