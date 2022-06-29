@@ -41,7 +41,7 @@
 
                 if (ergebnis.Equals(double.NaN))
                     Console.WriteLine("\nFehlerhafte Eingabe der Rechenoperation");
-                else if (ergebnis == double.PositiveInfinity)
+                else if (ergebnis == double.PositiveInfinity || ergebnis == double.NegativeInfinity)
                     Console.WriteLine("\nEine Teilung durch 0 ist nicht möglich");
                 else
                     //Ausgabe des Ergebnisses
