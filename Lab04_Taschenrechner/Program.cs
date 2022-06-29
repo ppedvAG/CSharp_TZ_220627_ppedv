@@ -1,6 +1,6 @@
 ﻿namespace Lab04_Taschenrechner
 {
-    internal class Program
+    class Program
     {
         //Enum-Definition
         enum Rechenoperation { Addition = 1, Subtraktion, Multiplikation, Division }
@@ -72,4 +72,5 @@
             } while (Console.ReadKey(true).Key == ConsoleKey.Y);
         }
     }
+
 }
