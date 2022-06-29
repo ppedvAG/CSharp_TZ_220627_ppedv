@@ -19,7 +19,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul05_Funktionen", "Funkt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab05_Taschenrechner", "Lab05_Taschenrechner\Lab05_Taschenrechner.csproj", "{D835BAD5-59D6-4954-9DCA-9F9B29D5DCA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP", "OOP\OOP.csproj", "{66F5A170-8FAC-4262-A408-65A7FF7271C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul06f_OOP", "OOP\Modul06f_OOP.csproj", "{66F5A170-8FAC-4262-A408-65A7FF7271C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab06f_Fahrzeugpark", "Lab06f_Fahrzeugpark\Lab06f_Fahrzeugpark.csproj", "{1590D2C7-23A7-4E94-B0C6-F66E293867E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{66F5A170-8FAC-4262-A408-65A7FF7271C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66F5A170-8FAC-4262-A408-65A7FF7271C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66F5A170-8FAC-4262-A408-65A7FF7271C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1590D2C7-23A7-4E94-B0C6-F66E293867E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1590D2C7-23A7-4E94-B0C6-F66E293867E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1590D2C7-23A7-4E94-B0C6-F66E293867E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1590D2C7-23A7-4E94-B0C6-F66E293867E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
