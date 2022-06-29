@@ -7,13 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul02_Grundlagen", "Grund
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab02_Geschwindigkeiten", "Lab02_Geschwindigkeiten\Lab02_Geschwindigkeiten.csproj", "{3BF76508-C255-4C61-8692-6D38628AC6F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul03_ArraysBedingungen", "ArraysBedingungen\Modul03_ArraysBedingungen.csproj", "{90E2B21C-4B68-47E4-B244-092EF98B7B22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul03_ArraysBedingungen", "ArraysBedingungen\Modul03_ArraysBedingungen.csproj", "{90E2B21C-4B68-47E4-B244-092EF98B7B22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab03_Schaltjahr_Minilotto", "Lab03_Schaltjahr_Minilotto\Lab03_Schaltjahr_Minilotto.csproj", "{49BE435E-91BD-42FE-8D6C-4716A3CA4C90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab03_Schaltjahr_Minilotto", "Lab03_Schaltjahr_Minilotto\Lab03_Schaltjahr_Minilotto.csproj", "{49BE435E-91BD-42FE-8D6C-4716A3CA4C90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul04_Schleifen_Enums", "Schleifen_Enums\Modul04_Schleifen_Enums.csproj", "{D025A2B6-E7E5-4378-B51A-3EC218B6297C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul04_Schleifen_Enums", "Schleifen_Enums\Modul04_Schleifen_Enums.csproj", "{D025A2B6-E7E5-4378-B51A-3EC218B6297C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab04_Taschenrechner", "Lab04_Taschenrechner\Lab04_Taschenrechner.csproj", "{0062613E-D528-4D4E-BE8B-EB614E044696}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab04_Taschenrechner", "Lab04_Taschenrechner\Lab04_Taschenrechner.csproj", "{0062613E-D528-4D4E-BE8B-EB614E044696}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funktionen", "Funktionen\Funktionen.csproj", "{A697D9C4-B9B2-45FD-B4B7-234DA1023704}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{0062613E-D528-4D4E-BE8B-EB614E044696}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0062613E-D528-4D4E-BE8B-EB614E044696}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0062613E-D528-4D4E-BE8B-EB614E044696}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A697D9C4-B9B2-45FD-B4B7-234DA1023704}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A697D9C4-B9B2-45FD-B4B7-234DA1023704}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A697D9C4-B9B2-45FD-B4B7-234DA1023704}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A697D9C4-B9B2-45FD-B4B7-234DA1023704}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
