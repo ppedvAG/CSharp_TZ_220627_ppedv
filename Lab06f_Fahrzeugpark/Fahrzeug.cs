@@ -25,6 +25,8 @@ namespace Lab06f_Fahrzeugpark
             this.Preis = preis;
             this.AktGeschwindigkeit = 0;
             this.MotorLäuft = false;
+
+            AnzahlFahrzeuge++;
         }
 
         //Methode zur Ausgabe von Objektinformationen
@@ -76,6 +78,24 @@ namespace Lab06f_Fahrzeugpark
 
                 Console.WriteLine($"{this.Name} bewegt sich jetzt mit {this.AktGeschwindigkeit}km/h");
             }
+        }
+
+        #endregion
+
+        #region Lab 07: Statische Member, Destruktor
+
+        //Statische Member
+        public static int AnzahlFahrzeuge { get; set; } = 0;
+
+        public static string ZeigeAnzahlFahrzeuge()
+        {
+            return $"Es wurden {AnzahlFahrzeuge} Fahrzeuge gebaut.";
+        }
+
+        //Destruktor
+        ~Fahrzeug()
+        {
+            Console.WriteLine($"{this.Name} wurde gerade verschrottet.");
         }
 
         #endregion
