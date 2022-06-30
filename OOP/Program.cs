@@ -22,6 +22,21 @@
             //Aufruf einer klasseneigenen Funktion
             Lebewesen kind = neuesLebewesen.GebäreKind("Fridolin");
             #endregion
+
+
+            #region Modul 07: Statische Member und GC
+            //for (int i = 0; i < 100000; i++)
+            //{
+            //    neuesLebewesen = new Lebewesen("Tier_" + i, "", new DateTime());
+            //}
+
+            GC.Collect();
+            GC.WaitForPendingFinalizers();
+
+            Console.WriteLine(Lebewesen.ZeigeAnzahlAllerLebewesen());
+
+            Console.ReadKey();
+            #endregion
         }
     }
 }

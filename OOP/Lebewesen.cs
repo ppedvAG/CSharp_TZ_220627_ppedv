@@ -48,6 +48,8 @@ namespace OOP
             this.Name = name;
             this.Lieblingsnahrung = lieblingsnahrung;
             this.Geburtsdatum = geburtsdatum;
+
+            Lebewesen.AnzahlAllerLebewesen++;
         }
 
         //Es können mehrere Konstruktoren definiert werden, welche unterschiedliche Übergabeparameter haben (Überladung). Ein Konstruktor, der keine
@@ -68,5 +70,17 @@ namespace OOP
 
         #endregion
 
+        ~Lebewesen()
+        {
+            Console.WriteLine($"{this.Name} ist gestorben");
+        }
+
+
+        public static int AnzahlAllerLebewesen { get; set; } = 0;
+
+        public static string ZeigeAnzahlAllerLebewesen()
+        {
+            return $"Es gibt {Lebewesen.AnzahlAllerLebewesen} Lebwesen auf dieser Welt.";
+        }
     }
 }
