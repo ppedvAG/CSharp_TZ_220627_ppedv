@@ -37,21 +37,29 @@
 
             #endregion
 
-            Mensch mensch = new Mensch("Anna", "Nass", "Spagetti", new DateTime(2001, 6, 4));
-            Mensch mensch2 = new Mensch("Rainer", "Zufall", "Pommes", new DateTime(2020, 6, 4), mensch);
+            #region Modul 08: Vererbung
 
-            Console.WriteLine(mensch.Alter);
+            //Instanziierung eines Objekts der vererbenden Klasse
+            Lebewesen lebewesen = new Lebewesen("Bello", "Fleisch", new DateTime(2007, 4, 23));
+            //Instanziierung eines Objekts der abgeleiteten Klasse
+            Mensch mensch = new Mensch("Anna", "Meier", "Lasagne", new DateTime(1984, 5, 6));
+            Mensch mensch2 = new Mensch("Maria", "Meier", "Schnitzel", new DateTime(1997, 5, 6), mensch);
+            //Aufruf von Properties und Methoden, welche aus der Mutterklasse stammen
+            Console.WriteLine(mensch2.Alter);
+            Console.WriteLine(mensch2.Name);
 
-            Console.WriteLine(mensch.Vorname);
+            //Aufruf einer Property der abgeleiteten Klasse
+            Console.WriteLine(mensch2.Vorname);
 
-            Console.WriteLine(mensch.ToString());
-
-            Lebewesen lebewesen = new Lebewesen("Bello", "Fleisch", new DateTime(2020, 1, 23));
-            Console.WriteLine(lebewesen.ToString());
-
+            //Ausgabe der (überschriebenen) ToString()-Methoden
             Console.WriteLine(lebewesen);
+            Console.WriteLine(mensch);
+            Console.WriteLine(mensch2);
 
+            //Aufruf einer Property eines abhängigen Objekts
             Console.WriteLine(mensch2.Mutter.Alter);
+
+            #endregion
         }
     }
 }
