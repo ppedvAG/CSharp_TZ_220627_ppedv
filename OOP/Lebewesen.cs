@@ -103,6 +103,8 @@ namespace OOP
             return $"{this.Name} ist {this.Alter} Jahre alt und mag gerne {this.Lieblingsnahrung}.";
         }
 
+        //Abstrakte Methoden dürfen nur in abstrakten Klassen existieren und definieren nur
+        ///eine Signatur. Die erbenden Klassen werden gezwungen eine Implementierung vorzunehmen
         public abstract void Essen();
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab06f_Fahrzeugpark
 {
-    public class Fahrzeug
+    public abstract class Fahrzeug
     {
         #region Lab 06: Properties, Methoden, Konstruktor
 
@@ -96,6 +96,36 @@ namespace Lab06f_Fahrzeugpark
         ~Fahrzeug()
         {
             Console.WriteLine($"{this.Name} wurde gerade verschrottet.");
+        }
+
+        #endregion
+
+        #region Lab 09: Polymorphismus
+
+        //statisches Feld für Zufallsgenerator
+        protected static Random generator = new Random();
+        //Methode zur zufälligen Generierung eines Fahrzeugs
+        public static Fahrzeug GeneriereFahrzeug(string nameSuffix = "")
+        {
+            switch (generator.Next(1, 4))
+            {
+                //Instanziierung der jeweiligen spezifischen Fahrzeuge
+                case 1:
+                    return new PKW("Mercedes" + nameSuffix, 210, 23000, 5);
+                case 2:
+                    return new Schiff("Titanic" + nameSuffix, 40, 25000000, Schiff.SchiffsTreibstoff.Dampf);
+                default:
+                    return new Flugzeug("Boing" + nameSuffix, 350, 90000000, 9800);
+            }
+        }
+
+        //Definition einer abstrakten Methode
+        public abstract void Hupen();
+
+        //override ToString() überschreibt die Standart-ToString()-Methode
+        public override string ToString()
+        {
+            return this.GetType().Name + ": " + this.Name;
         }
 
         #endregion

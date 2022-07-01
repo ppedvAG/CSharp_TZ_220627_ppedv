@@ -1,44 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Lab06f_Fahrzeugpark.Fahrzeug" Collapsed="true">
-    <Position X="6" Y="1.25" Width="1.5" />
+  <Class Name="Lab06f_Fahrzeugpark.Fahrzeug">
+    <Position X="6" Y="1.25" Width="3" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAQEAAAAAAAQAAAACAEEAAAAAAEQSAAA=</HashCode>
+      <HashCode>AAAAABAAAAAAAQEEAAAAAAQAAAACgEEAAAAAQEQSAAA=</HashCode>
       <FileName>Fahrzeug.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Lab06f_Fahrzeugpark.Flugzeug" Collapsed="true">
-    <Position X="3.5" Y="2.75" Width="1.5" />
+  <Class Name="Lab06f_Fahrzeugpark.Flugzeug">
+    <Position X="4.25" Y="6.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAA=</HashCode>
       <FileName>Flugzeug.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Lab06f_Fahrzeugpark.PKW" Collapsed="true">
-    <Position X="6" Y="2.75" Width="1.5" />
+  <Class Name="Lab06f_Fahrzeugpark.PKW">
+    <Position X="6.75" Y="6.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAA=</HashCode>
       <FileName>PKW.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Lab06f_Fahrzeugpark.Program" Collapsed="true">
+  <Class Name="Lab06f_Fahrzeugpark.Program">
     <Position X="10.75" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Lab06f_Fahrzeugpark.Schiff" Collapsed="true">
-    <Position X="8.25" Y="2.75" Width="1.5" />
+  <Class Name="Lab06f_Fahrzeugpark.Schiff">
+    <Position X="9.25" Y="6.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
     <NestedTypes>
-      <Enum Name="Lab06f_Fahrzeugpark.Schiff.SchiffsTreibstoff" Collapsed="true">
+      <Enum Name="Lab06f_Fahrzeugpark.Schiff.SchiffsTreibstoff">
         <TypeIdentifier>
           <NewMemberFileName>Schiff.cs</NewMemberFileName>
         </TypeIdentifier>
       </Enum>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAEAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQQEAAAAA=</HashCode>
       <FileName>Schiff.cs</FileName>
     </TypeIdentifier>
   </Class>

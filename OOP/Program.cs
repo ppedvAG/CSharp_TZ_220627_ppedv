@@ -61,40 +61,61 @@
 
             #endregion
 
+            #region Modul 09: Polymorphismus
+
+            //Deklaration einer Bsp-Variablen
             Lebewesen lebewesen;
-
+            //Instanziierung eines Objekts der abgeleiteten Klasse
             Mensch mensch = new Mensch("Anna", "Nass", "Lasagne", new DateTime(2003, 2, 12));
-
+            //Mensch-Variable gewährt zugriff auf Mensch-Member und Lebewesen-Member
             Console.WriteLine(mensch.Vorname);
 
+            //Zuweisung des abgeleiteten Objekts zu Variable der Mutterklasse
             lebewesen = mensch;
 
+            //Lebewesen-Variable gewährt Zugriff auf Lebewesen-Member
             Console.WriteLine(lebewesen.Name);
 
+            //überschriebene Methoden werden trotzdem von spezifischer Klasse ausgeführt
+            Console.WriteLine(lebewesen.ToString());
+
+            //Aufruf der unten stehenden Methode
             BenneLebewesenUm("Meier", mensch);
 
+            //Da Lebewesen abstrakt ist, können keine allgemeinen Lebewesen-Objekte mehr instanziier werden
             //lebewesen = new Lebewesen();
 
+            //Aufruf der abstrakten Methoden
             mensch.Essen();
             lebewesen.Essen();
+
+            #endregion
         }
 
+        #region Modul 09: Polymorphismus
+        //Methode erwartet ein Lebewesen -> jedes Objekt der Lebewesenklasse und abgeleiteter Klassen ist erlaubt
         public static void BenneLebewesenUm(string neuerName, Lebewesen lebewesen)
         {
+            //Zugriff auf Lebewesen-Member (ist bei jedem Lebewesen und damit auch jedem Mensch vorhanden)
             lebewesen.Name = neuerName;
 
-            if(lebewesen.GetType() == typeof(Mensch))
+            //Tests des Laufzeittyps
+            if (lebewesen.GetType() == typeof(Mensch))
                 Console.WriteLine($"Der Nachname wurde in {neuerName} geändert.");
             else
                 Console.WriteLine($"Der Name wurde in {neuerName} geändert.");
 
+            //Test, ob Laufzeittyp von bestimmtem Typ erbt (oder dieser ist)
             if (lebewesen is Mensch)
             {
+                //Rückcast des abgeleiteten Objekts aus Mutterklassevariablen in abgeleitete Variable
                 Mensch mensch = (Mensch)lebewesen;
+                //Alternativer Cast
                 mensch = lebewesen as Mensch;
-
+                //Zugriff auf spezifischen Member der abgeleiteten Klasse
                 Console.WriteLine($"{mensch.Vorname} ist Mensch");
             }
         }
+        #endregion
     }
 }

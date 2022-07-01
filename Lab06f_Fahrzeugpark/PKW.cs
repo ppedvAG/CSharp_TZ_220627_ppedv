@@ -20,5 +20,9 @@ namespace Lab06f_Fahrzeugpark
         {
             return $"Der PKW {this.Name} kostet {this.Preis}. Er hat {this.AnzahlTueren} Türen.";
         }
+        public override void Hupen()
+        {
+            Console.WriteLine($"{this.Name}: 'Hup Hup'");
+        }
     }
 }

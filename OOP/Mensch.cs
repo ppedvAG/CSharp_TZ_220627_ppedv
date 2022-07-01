@@ -32,9 +32,10 @@ namespace OOP
             return ausgabe;
         }
 
+        //Durch Mutterklasse erzwungene (weil dort abstrakte) Methode
         public override void Essen()
         {
-            Console.WriteLine($"{this.Vorname} {this.Name} isst {this.Lieblingsnahrung}.");
+            Console.WriteLine($"{this.Vorname} konsumiert {this.Lieblingsnahrung}.");
         }
     }
 }

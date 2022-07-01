@@ -50,23 +50,57 @@
 
             #region Lab 08: Vererbung
 
-            //Instanziierung verschiedener Fahrzeuge
-            Fahrzeug fz1 = new Fahrzeug("Unbekannter Fahrzeugtyp", 190, 23000);
-            PKW pkw1 = new PKW("Mercedes", 210, 23000, 5);
-            Schiff schiff1 = new Schiff("Titanic", 40, 25000000, Schiff.SchiffsTreibstoff.Dampf);
-            Flugzeug flugzeug1 = new Flugzeug("Boing", 350, 90000000, 9800);
+            ////Instanziierung verschiedener Fahrzeuge
+            //Fahrzeug fz1 = new Fahrzeug("Unbekannter Fahrzeugtyp", 190, 23000);
+            //PKW pkw1 = new PKW("Mercedes", 210, 23000, 5);
+            //Schiff schiff1 = new Schiff("Titanic", 40, 25000000, Schiff.SchiffsTreibstoff.Dampf);
+            //Flugzeug flugzeug1 = new Flugzeug("Boing", 350, 90000000, 9800);
 
-            //Ausgabe der verschiedenen Info()-Methoden
-            Console.WriteLine(fz1.Info());
-            Console.WriteLine(pkw1.Info());
-            Console.WriteLine(schiff1.Info());
-            Console.WriteLine(flugzeug1.Info());
+            ////Ausgabe der verschiedenen Info()-Methoden
+            //Console.WriteLine(fz1.Info());
+            //Console.WriteLine(pkw1.Info());
+            //Console.WriteLine(schiff1.Info());
+            //Console.WriteLine(flugzeug1.Info());
 
-            fz1.StarteMotor();
-            fz1.Beschleunige(12);
+            //fz1.StarteMotor();
+            //fz1.Beschleunige(12);
 
-            pkw1.StarteMotor();
-            pkw1.Beschleunige(123);
+            //pkw1.StarteMotor();
+            //pkw1.Beschleunige(123);
+
+            #endregion
+
+            #region Lab 09: Polymorphismus
+
+            //Arraydeklarierung und -initialisierung
+            Fahrzeug[] fahrzeuge = new Fahrzeug[10];
+
+            //Schleife über das Array zur Befüllung
+            for (int i = 0; i < fahrzeuge.Length; i++)
+            {
+                //Aufruf der Zufallsmethode aus der Fahrzeug-Klasse
+                fahrzeuge[i] = Fahrzeug.GeneriereFahrzeug($"_{i}");
+            }
+
+            //Deklarierung/Initialisierung der Zählvariablen
+            int pkws = 0, schiffe = 0, flugzeuge = 0;
+
+            //Schleife über das Array zur Identifizierung der Objekttypen
+            foreach (Fahrzeug fz in fahrzeuge)
+            {
+                //Ausgabe der ToString()-Methoden
+                Console.WriteLine(fz);
+                //Prüfung des Objektstyps und Hochzählen der entsprechenden Variablen
+                if (fz == null) Console.WriteLine("Kein Objekt vorhanden");
+                else if (fz is PKW) pkws++;
+                else if (fz is Schiff) schiffe++;
+                else flugzeuge++;
+            }
+
+            //Ausgabe
+            Console.WriteLine($"Es wurden {pkws} PKW(s), {flugzeuge} Flugzeug(e) und {schiffe} Schiff(e) produziert.");
+            //Ausführung der abstrakten Methode
+            fahrzeuge[2].Hupen();
 
             #endregion
         }
