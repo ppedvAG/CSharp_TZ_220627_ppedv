@@ -33,7 +33,7 @@ namespace Lab06f_Fahrzeugpark
         public virtual string Info()
         {
             if (this.MotorLäuft)
-                return $"{this.Name} kostet {this.Preis}€ und fährt momentan mit {this.AktGeschwindigkeit} von maximal {this.MaxGeschwindigkeit}km/h.";
+                return $"{this.Name} kostet {this.Preis}€ und bewegt sich momentan mit {this.AktGeschwindigkeit} von maximal {this.MaxGeschwindigkeit}km/h.";
             else
                 return $"{this.Name} kostet {this.Preis}€ und könnte maximal {this.MaxGeschwindigkeit}km/h fahren.";
         }

@@ -31,5 +31,10 @@ namespace OOP
                 ausgabe = ausgabe + $" Die Mutter ist {this.Mutter.Vorname} {this.Mutter.Name}.";
             return ausgabe;
         }
+
+        public override void Essen()
+        {
+            Console.WriteLine($"{this.Vorname} {this.Name} isst {this.Lieblingsnahrung}.");
+        }
     }
 }

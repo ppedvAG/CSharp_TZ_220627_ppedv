@@ -18,7 +18,7 @@ namespace Lab06f_Fahrzeugpark
 
         public override string Info()
         {
-            return "Der PKW " + base.Info() + $" Er hat {this.AnzahlTueren} Türen.";
+            return $"Der PKW {this.Name} kostet {this.Preis}. Er hat {this.AnzahlTueren} Türen.";
         }
     }
 }
