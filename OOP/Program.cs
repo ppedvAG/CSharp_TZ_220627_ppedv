@@ -93,21 +93,55 @@
 
             #region Modul 10: Interfaces
 
-            //Instanziierung eines Beispiel-Objekts
-            Mensch mensch = new Mensch("Anna", "Meier", "Lasagne", new DateTime(1984, 5, 6));
-            //Betrachtung des Objekts als Objekt des Interfaces
-            IArbeit arbeitendesObjekt = mensch;
-            //Zugriff auf Interface-Methode
-            arbeitendesObjekt.Auszahlung();
-            //Übergabe an Methode, welche ein Objekt des Interfaces erwartet
-            Gehaltserhöhung(arbeitendesObjekt);
-            //Übergabe benötigt keinen Cast aus implementierender Klasse
-            Gehaltserhöhung(mensch);
+            ////Instanziierung eines Beispiel-Objekts
+            //Mensch mensch = new Mensch("Anna", "Meier", "Lasagne", new DateTime(1984, 5, 6));
+            ////Betrachtung des Objekts als Objekt des Interfaces
+            //IArbeit arbeitendesObjekt = mensch;
+            ////Zugriff auf Interface-Methode
+            //arbeitendesObjekt.Auszahlung();
+            ////Übergabe an Methode, welche ein Objekt des Interfaces erwartet
+            //Gehaltserhöhung(arbeitendesObjekt);
+            ////Übergabe benötigt keinen Cast aus implementierender Klasse
+            //Gehaltserhöhung(mensch);
 
-            //Aufruf der Clone()-Funktion des IClonable-Interfaces
-            Mensch kopierterMensch = (Mensch)mensch.Clone();
+            ////Aufruf der Clone()-Funktion des IClonable-Interfaces
+            //Mensch kopierterMensch = (Mensch)mensch.Clone();
             #endregion
 
+            List<string> Städteliste = new List<string>();
+
+            Städteliste.Add("Hamburg");
+            Städteliste.Add("Berlin");
+            Städteliste.Add("München");
+            Städteliste.Add("Köln");
+            Städteliste.Add("Düsseldorf");
+
+            Console.WriteLine(Städteliste.Count);
+
+            Console.WriteLine(Städteliste[3]);
+
+            Städteliste[3] = "Frankfurt";
+            Console.WriteLine(Städteliste[3]);
+
+            foreach (var item in Städteliste)
+            {
+                Console.WriteLine(item);
+            }
+
+            Städteliste.Remove("Frankfurt");
+
+            Console.WriteLine(Städteliste.Count);
+            Console.WriteLine(Städteliste[3]);
+
+
+            Dictionary<string, int> Dict = new Dictionary<string, int>();
+
+            Dict.Add("Hallo", 234);
+            Dict.Add("Ahoj", -234);
+            Dict.Add("Ciao", 123);
+            Dict.Add("Moin", 123);
+
+            Console.WriteLine(Dict["Hallo"]);
         }
 
         #region Modul 09: Polymorphismus

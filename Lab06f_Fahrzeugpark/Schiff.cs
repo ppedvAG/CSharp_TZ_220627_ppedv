@@ -77,7 +77,7 @@ namespace Lab06f_Fahrzeugpark
             }
             //Fehlermeldung
             else
-                Console.WriteLine($"'{this.Name} hat keine Ladung geladen.");
+                Console.WriteLine($"'{this.Name}' hat keine Ladung geladen.");
             //Rückgabe von null, falls kein Fahrzeug geladen ist
             return null;
         }
