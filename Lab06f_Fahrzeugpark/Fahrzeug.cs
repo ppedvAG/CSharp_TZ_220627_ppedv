@@ -111,7 +111,7 @@ namespace Lab06f_Fahrzeugpark
             {
                 //Instanziierung der jeweiligen spezifischen Fahrzeuge
                 case 1:
-                    return new PKW("Mercedes" + nameSuffix, 210, 23000, 5);
+                    return PKW.ErzeugeZufälligenPKW(nameSuffix);
                 case 2:
                     return new Schiff("Titanic" + nameSuffix, 40, 25000000, Schiff.SchiffsTreibstoff.Dampf);
                 default:

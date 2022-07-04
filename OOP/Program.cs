@@ -107,44 +107,9 @@
             ////Aufruf der Clone()-Funktion des IClonable-Interfaces
             //Mensch kopierterMensch = (Mensch)mensch.Clone();
             #endregion
-
-            List<string> Städteliste = new List<string>();
-
-            Städteliste.Add("Hamburg");
-            Städteliste.Add("Berlin");
-            Städteliste.Add("München");
-            Städteliste.Add("Köln");
-            Städteliste.Add("Düsseldorf");
-
-            Console.WriteLine(Städteliste.Count);
-
-            Console.WriteLine(Städteliste[3]);
-
-            Städteliste[3] = "Frankfurt";
-            Console.WriteLine(Städteliste[3]);
-
-            foreach (var item in Städteliste)
-            {
-                Console.WriteLine(item);
-            }
-
-            Städteliste.Remove("Frankfurt");
-
-            Console.WriteLine(Städteliste.Count);
-            Console.WriteLine(Städteliste[3]);
-
-
-            Dictionary<string, int> Dict = new Dictionary<string, int>();
-
-            Dict.Add("Hallo", 234);
-            Dict.Add("Ahoj", -234);
-            Dict.Add("Ciao", 123);
-            Dict.Add("Moin", 123);
-
-            Console.WriteLine(Dict["Hallo"]);
         }
 
-        #region Modul 09: Polymorphismus
+        #region Modul 09: Polymorphismus (Bsp-Methode)
         //Methode erwartet ein Lebewesen -> jedes Objekt der Lebewesenklasse und abgeleiteter Klassen ist erlaubt
         public static void BenneLebewesenUm(string neuerName, Lebewesen lebewesen)
         {
@@ -170,7 +135,7 @@
         }
         #endregion
 
-        #region Modul 10: Interfaces
+        #region Modul 10: Interfaces (Bsp-Methode)
         //Bsp-Methode, welche ein Objekt vom Typ des Interfaces verlangt
         public static void Gehaltserhöhung(IArbeit arbeitendesObjekt)
         {
