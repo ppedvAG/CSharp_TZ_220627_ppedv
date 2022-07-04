@@ -91,19 +91,22 @@
 
             #endregion
 
-            Mensch mensch = new Mensch("Rainer", "Zufall", "Spagetti", new DateTime(2002, 12, 3));
-            mensch.Gehalt = 2300;
-            mensch.Job = "Programmierer";
+            #region Modul 10: Interfaces
 
-            mensch.Auszahlung();
-
+            //Instanziierung eines Beispiel-Objekts
+            Mensch mensch = new Mensch("Anna", "Meier", "Lasagne", new DateTime(1984, 5, 6));
+            //Betrachtung des Objekts als Objekt des Interfaces
             IArbeit arbeitendesObjekt = mensch;
+            //Zugriff auf Interface-Methode
             arbeitendesObjekt.Auszahlung();
+            //Übergabe an Methode, welche ein Objekt des Interfaces erwartet
+            Gehaltserhöhung(arbeitendesObjekt);
+            //Übergabe benötigt keinen Cast aus implementierender Klasse
+            Gehaltserhöhung(mensch);
 
-            IArbeit[] arbeitendeObjekte = new IArbeit[2];
-            arbeitendeObjekte[0] = mensch;
-
-            Gehalterhöhung(mensch);
+            //Aufruf der Clone()-Funktion des IClonable-Interfaces
+            Mensch kopierterMensch = (Mensch)mensch.Clone();
+            #endregion
 
         }
 
@@ -133,16 +136,20 @@
         }
         #endregion
 
-        public static void Gehalterhöhung(IArbeit arbeitendesObjekt)
+        #region Modul 10: Interfaces
+        //Bsp-Methode, welche ein Objekt vom Typ des Interfaces verlangt
+        public static void Gehaltserhöhung(IArbeit arbeitendesObjekt)
         {
             arbeitendesObjekt.Gehalt += 100;
 
-            if(arbeitendesObjekt is Mensch)
+            //Prüfung des Objekts auf Laufzeittyp
+            if (arbeitendesObjekt is Mensch)
             {
-                (arbeitendesObjekt as Mensch).Essen();
+                //Cast
+                Mensch mensch = (Mensch)arbeitendesObjekt;
+                mensch.Essen();
             }
         }
-
-        List
+        #endregion
     }
 }

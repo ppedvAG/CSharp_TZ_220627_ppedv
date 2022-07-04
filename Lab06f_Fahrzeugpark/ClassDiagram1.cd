@@ -1,35 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Lab06f_Fahrzeugpark.Fahrzeug">
-    <Position X="6" Y="1.25" Width="3" />
+    <Position X="5.25" Y="1.25" Width="3" />
     <TypeIdentifier>
       <HashCode>AAAAABAAAAAAAQEEAAAAAAQAAAACgEEAAAAAQEQSAAA=</HashCode>
       <FileName>Fahrzeug.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lab06f_Fahrzeugpark.Flugzeug">
-    <Position X="4.25" Y="6.5" Width="1.5" />
+    <Position X="3.5" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAA=</HashCode>
       <FileName>Flugzeug.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lab06f_Fahrzeugpark.PKW">
-    <Position X="6.75" Y="6.5" Width="1.5" />
+    <Position X="6" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAA=</HashCode>
       <FileName>PKW.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lab06f_Fahrzeugpark.Program">
-    <Position X="10.75" Y="1.25" Width="1.5" />
+    <Position X="10" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lab06f_Fahrzeugpark.Schiff">
-    <Position X="9.25" Y="6.5" Width="1.5" />
+    <Position X="8.5" Y="6.5" Width="1.5" />
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
@@ -40,10 +40,26 @@
         </TypeIdentifier>
       </Enum>
     </NestedTypes>
+    <InheritanceLine Type="Lab06f_Fahrzeugpark.Fahrzeug" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.75" Y="5.949" />
+        <Point X="6.75" Y="6.2" />
+        <Point X="9.625" Y="6.2" />
+        <Point X="9.625" Y="6.5" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQQEAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAABAAAAAAAAQQEAABAA=</HashCode>
       <FileName>Schiff.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.1" />
   </Class>
+  <Interface Name="Lab06f_Fahrzeugpark.IBeladbar">
+    <Position X="10" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAABAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>IBeladbar.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
