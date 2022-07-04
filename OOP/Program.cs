@@ -63,33 +63,48 @@
 
             #region Modul 09: Polymorphismus
 
-            //Deklaration einer Bsp-Variablen
-            Lebewesen lebewesen;
-            //Instanziierung eines Objekts der abgeleiteten Klasse
-            Mensch mensch = new Mensch("Anna", "Nass", "Lasagne", new DateTime(2003, 2, 12));
-            //Mensch-Variable gewährt zugriff auf Mensch-Member und Lebewesen-Member
-            Console.WriteLine(mensch.Vorname);
+            ////Deklaration einer Bsp-Variablen
+            //Lebewesen lebewesen;
+            ////Instanziierung eines Objekts der abgeleiteten Klasse
+            //Mensch mensch = new Mensch("Anna", "Nass", "Lasagne", new DateTime(2003, 2, 12));
+            ////Mensch-Variable gewährt zugriff auf Mensch-Member und Lebewesen-Member
+            //Console.WriteLine(mensch.Vorname);
 
-            //Zuweisung des abgeleiteten Objekts zu Variable der Mutterklasse
-            lebewesen = mensch;
+            ////Zuweisung des abgeleiteten Objekts zu Variable der Mutterklasse
+            //lebewesen = mensch;
 
-            //Lebewesen-Variable gewährt Zugriff auf Lebewesen-Member
-            Console.WriteLine(lebewesen.Name);
+            ////Lebewesen-Variable gewährt Zugriff auf Lebewesen-Member
+            //Console.WriteLine(lebewesen.Name);
 
-            //überschriebene Methoden werden trotzdem von spezifischer Klasse ausgeführt
-            Console.WriteLine(lebewesen.ToString());
+            ////überschriebene Methoden werden trotzdem von spezifischer Klasse ausgeführt
+            //Console.WriteLine(lebewesen.ToString());
 
-            //Aufruf der unten stehenden Methode
-            BenneLebewesenUm("Meier", mensch);
+            ////Aufruf der unten stehenden Methode
+            //BenneLebewesenUm("Meier", mensch);
 
-            //Da Lebewesen abstrakt ist, können keine allgemeinen Lebewesen-Objekte mehr instanziier werden
-            //lebewesen = new Lebewesen();
+            ////Da Lebewesen abstrakt ist, können keine allgemeinen Lebewesen-Objekte mehr instanziier werden
+            ////lebewesen = new Lebewesen();
 
-            //Aufruf der abstrakten Methoden
-            mensch.Essen();
-            lebewesen.Essen();
+            ////Aufruf der abstrakten Methoden
+            //mensch.Essen();
+            //lebewesen.Essen();
 
             #endregion
+
+            Mensch mensch = new Mensch("Rainer", "Zufall", "Spagetti", new DateTime(2002, 12, 3));
+            mensch.Gehalt = 2300;
+            mensch.Job = "Programmierer";
+
+            mensch.Auszahlung();
+
+            IArbeit arbeitendesObjekt = mensch;
+            arbeitendesObjekt.Auszahlung();
+
+            IArbeit[] arbeitendeObjekte = new IArbeit[2];
+            arbeitendeObjekte[0] = mensch;
+
+            Gehalterhöhung(mensch);
+
         }
 
         #region Modul 09: Polymorphismus
@@ -117,5 +132,17 @@
             }
         }
         #endregion
+
+        public static void Gehalterhöhung(IArbeit arbeitendesObjekt)
+        {
+            arbeitendesObjekt.Gehalt += 100;
+
+            if(arbeitendesObjekt is Mensch)
+            {
+                (arbeitendesObjekt as Mensch).Essen();
+            }
+        }
+
+        List
     }
 }

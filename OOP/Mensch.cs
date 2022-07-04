@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace OOP
 {
     //Mensch erbt mittels des :-Zeichens von der Lebewesen-Klasse und übernimmt somit alle Eigenschaften und Methoden von dieser.
-    class Mensch : Lebewesen
+    class Mensch : Lebewesen, IArbeit, ICloneable
     {
         //Zusätzliche Mensch-eigene Eigenschaften
         public string Vorname { get; set; }
@@ -36,6 +36,23 @@ namespace OOP
         public override void Essen()
         {
             Console.WriteLine($"{this.Vorname} konsumiert {this.Lieblingsnahrung}.");
+        }
+
+        public int Gehalt { get; set; }
+        public string Job { get; set; }
+
+        public void Auszahlung()
+        {
+            Console.WriteLine($"{this.Vorname} {this.Name} hat {this.Gehalt}€ für {this.Job} erhalten.");
+        }
+
+        public object Clone()
+        {
+            Mensch mensch = (Mensch)this.MemberwiseClone();
+
+            mensch.Mutter = this.Mutter;
+
+            return mensch;
         }
     }
 }
