@@ -129,9 +129,8 @@
             Queue<Fahrzeug> fzQueue = new Queue<Fahrzeug>();
             Stack<Fahrzeug> fzStack = new Stack<Fahrzeug>();
             Dictionary<Fahrzeug, Fahrzeug> fzDict = new Dictionary<Fahrzeug, Fahrzeug>();
-            Random random = new Random();
             //Deklaration und Initialisierung einer Variablen zur Bestimmung der Anzahl der Durchläufe 
-            int anzahlFahrzeuge = 10;
+            int anzahlFahrzeuge = 5000;
 
             //Schleife zur zufälligen Befüllung von Queue und Stack
             for (int i = 0; i < anzahlFahrzeuge; i++)
@@ -145,6 +144,11 @@
                 //Prüfung, ob das Interface vorhanden ist (mittels Peek(), da die Objekte noch benötigt werden)...
                 if (fzQueue.Peek() is IBeladbar)
                 {
+                    //Fahrzeug fz = fzQueue.Peek();
+                    //IBeladbar beladbar = (IBeladbar)fz;
+                    //Fahrzeug fz2 = fzStack.Peek();
+                    //beladbar.Belade(fz2);
+
                     //...wenn ja, dann Cast in das Interface und Ausführung der Belade()-Methode (mittels Peek())...
                     ((IBeladbar)fzQueue.Peek()).Belade(fzStack.Peek());
                     //...sowie Hinzufügen zum Dictionary (mittels Pop()/Dequeue(), um beim nächsten Durchlauf andere Objekte an den Spitzen zu haben)
