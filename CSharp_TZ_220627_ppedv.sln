@@ -27,9 +27,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul07_Werte_Referenzen", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul11_GenerischeListen", "GenerischeListen\Modul11_GenerischeListen.csproj", "{8B7F619E-9C8B-4717-8A0A-320BACCD2031}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling", "ExceptionHandling\ExceptionHandling.csproj", "{74190962-06BC-4BF1-9495-970B16BAFE90}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul12_ExceptionHandling", "ExceptionHandling\Modul12_ExceptionHandling.csproj", "{74190962-06BC-4BF1-9495-970B16BAFE90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{7AD519E9-D881-4C4D-954A-396F768C3607}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul12_UnitTests", "UnitTests\Modul12_UnitTests.csproj", "{7AD519E9-D881-4C4D-954A-396F768C3607}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab12_ExceptionHandling", "Lab12_ExceptionHandling\Lab12_ExceptionHandling.csproj", "{AFF42C46-C43F-44C1-842C-F70681805F01}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{7AD519E9-D881-4C4D-954A-396F768C3607}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AD519E9-D881-4C4D-954A-396F768C3607}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AD519E9-D881-4C4D-954A-396F768C3607}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFF42C46-C43F-44C1-842C-F70681805F01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFF42C46-C43F-44C1-842C-F70681805F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFF42C46-C43F-44C1-842C-F70681805F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFF42C46-C43F-44C1-842C-F70681805F01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
