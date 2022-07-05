@@ -4,7 +4,6 @@ Codebeispiele C#-Grundlagen vom 27.06.22
 SLN-Datei ist die VS22-Projektmappe, welche alle Kursprojekte (Demos und Labs) enthält.
 
 Wichtige VS-Shortcuts:
-
 Strg+Mausklick  -> Zeige Datentyp-/Methodendefinition
 Strg+D          -> Verdopple markierte Zeilen
 Strg+K/Strg+C   -> Markierte Zeilen auskommentieren
