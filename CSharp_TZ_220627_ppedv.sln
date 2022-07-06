@@ -27,13 +27,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul07_Werte_Referenzen", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul11_GenerischeListen", "GenerischeListen\Modul11_GenerischeListen.csproj", "{8B7F619E-9C8B-4717-8A0A-320BACCD2031}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul12_ExceptionHandling", "ExceptionHandling\Modul12_ExceptionHandling.csproj", "{74190962-06BC-4BF1-9495-970B16BAFE90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul12_ExceptionHandling", "ExceptionHandling\Modul12_ExceptionHandling.csproj", "{74190962-06BC-4BF1-9495-970B16BAFE90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul12_UnitTests", "UnitTests\Modul12_UnitTests.csproj", "{7AD519E9-D881-4C4D-954A-396F768C3607}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul12_UnitTests", "UnitTests\Modul12_UnitTests.csproj", "{7AD519E9-D881-4C4D-954A-396F768C3607}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab12_ExceptionHandling", "Lab12_ExceptionHandling\Lab12_ExceptionHandling.csproj", "{AFF42C46-C43F-44C1-842C-F70681805F01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab12_ExceptionHandling", "Lab12_ExceptionHandling\Lab12_ExceptionHandling.csproj", "{AFF42C46-C43F-44C1-842C-F70681805F01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Delegates.csproj", "{05D7A262-78D9-45B5-8B8A-B3367D7138CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegates", "Delegates\Delegates.csproj", "{05D7A262-78D9-45B5-8B8A-B3367D7138CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsBsp", "WinFormsBsp\WinFormsBsp.csproj", "{F5F82FA8-4A2D-4989-AE7A-34875C29CA93}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{05D7A262-78D9-45B5-8B8A-B3367D7138CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05D7A262-78D9-45B5-8B8A-B3367D7138CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05D7A262-78D9-45B5-8B8A-B3367D7138CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5F82FA8-4A2D-4989-AE7A-34875C29CA93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5F82FA8-4A2D-4989-AE7A-34875C29CA93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5F82FA8-4A2D-4989-AE7A-34875C29CA93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5F82FA8-4A2D-4989-AE7A-34875C29CA93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -8,7 +8,7 @@ namespace OOP
 {
     //Mensch erbt mittels des :-Zeichens von der Lebewesen-Klasse und übernimmt somit alle Eigenschaften und Methoden von dieser.
     //Mensch implementiert Interfaces, welche dieser Klasse zusätzliche Eigenschaften verleihen
-    class Mensch : Lebewesen, IArbeit, ICloneable
+    public class Mensch : Lebewesen, IArbeit, ICloneable
     {
         //Zusätzliche Mensch-eigene Eigenschaften
         public string Vorname { get; set; }
